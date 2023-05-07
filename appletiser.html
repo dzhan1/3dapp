@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>My first X3DOM page</title>
+    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'/>
+</head>
+<body>
+<h1>Appletiser</h1>
+<x3d width="500" height="500">
+    <scene>
+      <DirectionalLight id="directional" direction='0 0 1' on ="TRUE" intensity='1.0' shadowIntensity='0.0'></DirectionalLight> 
+      <Viewpoint id="front" position="0 100.684600830078 247.686065673828" orientation="0 0 1 0" description="camera"></Viewpoint>
+      <Viewpoint id="right" position="331.824768066406 100.684600830078 -33.3939094543457" orientation="1.51878694083091E-12 0.999999940395355 0 1.570796251297" description="camera"></Viewpoint>
+      <Viewpoint id="left" position="-301.396667480469 100.684600830078 -33.3938636779785" orientation="1.5185429953421E-12 -0.999999940395355 0 1.570796251297" description="camera"></Viewpoint>
+      <Viewpoint id="back" position="-7.98032669990789E-6 100.684600830078 -355.044677734375" orientation="0 1 0 3.14159274101257" description="camera"></Viewpoint>
+      <Viewpoint id="top" position="0 0 0" orientation="0 0 1 0" description="camera"></Viewpoint>
+      <Viewpoint id="bottom" position="0 0 0" orientation="0.000422863988205791 0.99999988079071 -6.47727116387387E-9 3.14159274101257" description="camera"></Viewpoint>
+      <inline url="Appletiser.x3d"></inline>
+    </scene>
+  </x3d>
+  
+  <button onclick="document.getElementById('right').setAttribute('set_bind','true');">Right</button>
+  <button onclick="document.getElementById('left').setAttribute('set_bind','true');">Left</button>
+  <button onclick="document.getElementById('front').setAttribute('set_bind','true');">Front</button>
+  <button onclick="document.getElementById('back').setAttribute('set_bind','true');">Back</button>         
+  <button onclick="document.getElementById('top').setAttribute('set_bind','true');">Top</button> 
+  <button onclick="document.getElementById('bottom').setAttribute('set_bind','true');">Bottom</button> 
+    </scene>
+</x3d>
+</body>
+</html>
